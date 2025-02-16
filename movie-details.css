@@ -1,0 +1,111 @@
+*:where( :not(html, iframe, canvas, img, svg, video, audio):not(svg *, symbol *)) {
+    all: unset;
+    display: revert;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.background-info{
+    position: relative;
+}
+
+.background-info img{
+    width: 100%;
+}
+
+.background-info:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0));
+}
+
+.movie-title{
+    color: white;
+    font-size: 30px;
+    position: absolute;
+    margin-top: -180px;
+    left: 35%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.movie-title h3{
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.movie-title{
+    font-size: 34px;
+}
+
+.movie-stats{
+    position: absolute;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    color: white;
+    margin-top: -80px;
+    left: 35%;
+}
+
+.movie-rate{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.movie-info{
+    position: relative;
+    background-color: white;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    min-height: 500px;
+}
+
+.movie-info-content {
+    position: absolute;
+    left: 35%;
+    top: 10%;
+    right: 10%;
+}
+
+.image-cover img {
+    width: 175px;
+    height: 243px;
+}
+
+.trailer-text { 
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.image-cover{
+    margin-top: -40%;
+    position: sticky;
+    top: 90px;
+    left: 20%;
+}
+
+.cast{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 12px;
+    margin-top: 100px;
+    cursor: pointer;
+}
+
+.cast img{
+    width: 86px;
+    height: 129px;
+}
+
+.cast h3{
+    color: gray;
+}
